@@ -6,19 +6,19 @@ module.exports = function(app) {
     app.routes('/')
         .get(jsonku.index);
 
-    app.rautes('/tampil')
+    app.routes('/tampil')
         .get(jsonku.tampilsemuamahasiswa);  
         
-    app.rautes('/tampil')
+    app.routes('/tampil')
         .get(jsonku.tampilberdasaekanid); 
     
-    app.rautes('/tambah')
+    app.routes('/tambah')
         .post(jsonku.tambahMahasiswa);
 
-    app.rautes('/ubah')
+    app.routes('/ubah')
         .put(jsonku.ubahMahasiswa);
 
-    app.rautes('/hapus')
+    app.routes('/hapus')
          .delete(jsonku.hapusMahasiswa);
 }
 
